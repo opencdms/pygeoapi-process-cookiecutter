@@ -18,7 +18,9 @@
 # under the License.
 #
 ###############################################################################
+__version__ = "0.0.1"
 
+import logging
 from pygeoapi.process.base import BaseProcessor, ProcessorExecuteError
 
 LOGGER = logging.getLogger(__name__)

@@ -44,10 +44,10 @@ PROCESS_METADATA = {
     }],
     'inputs': {
         'example_input': {
-            'title': 'name',
-            'description': '',
+            'title': 'value',
+            'description': 'Number to double',
             'schema': {
-                'type': 'string'
+                'type': 'numeric'
             },
             'minOccurs': 1,
             'maxOccurs': 1,
@@ -58,10 +58,10 @@ PROCESS_METADATA = {
     'outputs': { },
     'example': {
         'inputs': {
-            "name": "Bob"
+            "value": 5
         },
         'outputs':{
-            "greeting": "Hello Bob"
+            "result": 10
         }
     }
 }
@@ -80,9 +80,9 @@ class {{cookiecutter.process_name}}(BaseProcessor):
 
     def execute(self, data):
         mimetype = 'application/json'
-        person = data.get("example_input", None)
+        value = data.get("example_input", None)
         output = {
-            "greeting": f"Hello {person}"
+            "result": value*2
         }
         return mimetype, output
 

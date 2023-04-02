@@ -7,6 +7,7 @@
   "process_id": "ID for process, imported as import process_id",
   "process_name": "Name of process class, process_id.process_name",
   "process_description": "Short description of process",
+  "component": "name of vue component to create, e.g. my-new-component",
   "keywords": "",
   "license": "APL2"
 }

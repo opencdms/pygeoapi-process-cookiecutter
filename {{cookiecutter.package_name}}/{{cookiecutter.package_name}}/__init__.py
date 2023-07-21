@@ -29,7 +29,7 @@ PROCESS_METADATA = {
     'version': '0.0.1',
     'id': '{{cookiecutter.process_id}}',
     'title': {
-        'en': '{{cookiecutter.process_name}}',
+        'en': '{{cookiecutter.package_name}}',
     },
     'description': {
         'en': '{{cookiecutter.process_description}}',
@@ -67,7 +67,7 @@ PROCESS_METADATA = {
 }
 
 
-class {{cookiecutter.process_name}}(BaseProcessor):
+class {{cookiecutter.process_class_name}}(BaseProcessor):
 
     def __init__(self, processor_def):
         """

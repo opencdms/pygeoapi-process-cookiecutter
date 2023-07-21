@@ -2,5 +2,5 @@ resources:
   '{{cookiecutter.process_id}}':
     type: process
     processor:
-      name: {{cookiecutter.package_name}}.{{cookiecutter.process_name}}
+      name: {{cookiecutter.package_name}}.{{cookiecutter.process_class_name}}
 

@@ -73,7 +73,7 @@ class {{cookiecutter.process_class_name}}(BaseProcessor):
         """
         Initialize object
         :param processor_def: provider definition
-        :returns: pygeoapi.process.{{cookiecutter.process_id}}.{{cookiecutter.process_name}}
+        :returns: pygeoapi.process.{{cookiecutter.process_id}}.{{cookiecutter.process_class_name}}
         """
 
         super().__init__(processor_def, PROCESS_METADATA)
@@ -88,4 +88,4 @@ class {{cookiecutter.process_class_name}}(BaseProcessor):
 
 
     def __repr__(self):
-        return '<{{cookiecutter.process_name}}> {}'.format(self.name)
+        return '<{{cookiecutter.process_class_name}}> {}'.format(self.name)

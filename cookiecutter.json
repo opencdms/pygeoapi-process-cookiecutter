@@ -4,8 +4,9 @@
   "maintainer": "Name of maintainer",
   "maintainer_email": "Maintainer email address",
   "package_url": "Package homepage",
-  "process_id": "ID for process, imported as import process_id",
-  "process_name": "Name of process class, process_id.process_name",
+  "package_name": "",
+  "process_id": "ID for process ()",
+  "process_name": "Name of process class, package_name.process_name",
   "process_description": "Short description of process",
   "keywords": "",
   "license": "APL2"
